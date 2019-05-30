@@ -1,0 +1,199 @@
+[[file:_img/teaser.gif]]
+
+[[file:_img/subscribe.gif]]
+
+* A Machine Learning Course with Python
+  :PROPERTIES:
+  :CUSTOM_ID: a-machine-learning-course-with-python
+  :END:
+
+[[https://github.com/pyairesearch/machine-learning-for-everybody/pulls][[[https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat]]]]
+
+[[https://github.com/ellerbrock/open-source-badge/][[[https://badges.frapsoft.com/os/v2/open-source.png?v=103]]]]
+
+[[https://www.python.org/][[[https://img.shields.io/badge/Made%20with-Python-1f425f.svg]]]]
+
+[[https://github.com/machinelearningmindset/machine-learning-course/graphs/contributors][[[https://img.shields.io/github/contributors/machinelearningmindset/machine-learning-course.svg]]]]
+
+[[https://twitter.com/machinemindset][[[https://img.shields.io/twitter/follow/machinemindset.svg?label=Follow&style=social]]]]
+
+** TODO Commit as a scimax scientific notebook [0/1]
+
+*** TODO Use pandoc to convert rst to org
+
+How to use pandoc recursively?
+#+BEGIN_SRC sh
+pandoc -i README.rst -o README.org
+#+END_SRC
+
+
+| Linear Regression          | [[file:code/overview/linear_regression][Python]] | [[file:docs/source/content/overview/linear-regression.org][Tutorial]] |
+
+
+: # This shell script converts all the rst files in directory to org ones.
+: for fx in *.rst; do pandoc -i $fx -o ${fx%.rst}.org; done
+
+
+*** Move todo to project or kanban to end
+
+
+* Table of Contents
+  :PROPERTIES:
+  :CUSTOM_ID: table-of-contents
+  :END:
+
+** Introduction
+   :PROPERTIES:
+   :CUSTOM_ID: introduction
+   :END:
+
+The purpose of this project is to provide a comprehensive and yet
+simple course in Machine Learning using Python.
+
+** Motivation
+   :PROPERTIES:
+   :CUSTOM_ID: motivation
+   :END:
+
+=Machine Learning=, as a tool for =Artificial Intelligence=, is one of
+the most widely adopted scientific fields. A considerable amount of
+literature has been published on Machine Learning. The purpose of this
+project is to provide the most important aspects of =Machine Learning=
+by presenting a series of simple and yet comprehensive tutorials using
+=Python=. In this project, we built our tutorials using many different
+well-known Machine Learning frameworks such as =Scikit-learn=. In this
+project you will learn:
+
+- What is the definition of Machine Learning?
+- When it started and what is the trending evolution?
+- What are the Machine Learning categories and subcategories?
+- What are the mostly used Machine Learning algorithms and how to
+  implement them?
+
+** TODO Machine Learning [0/4]
+   :PROPERTIES:
+   :CUSTOM_ID: machine-learning
+   :END:
+
+| Title                               | Document    |
+|-------------------------------------+-------------|
+| An Introduction to Machine Learning | [[file:docs/source/intro/intro.org][Overview]]    |
+
+*** TODO Machine Learning Basics
+    :PROPERTIES:
+    :CUSTOM_ID: machine-learning-basics
+    :END:
+
+[[file:_img/intro.png]]
+
+| Title                      | Code   | Document |
+|----------------------------+--------+----------|
+| Linear Regression          | [[file:code/overview/linear_regression][Python]] | [[file:docs/source/content/overview/linear-regression.rst][Tutorial]] |
+| Overfitting / Underfitting | [[file:code/overview/overfitting][Python]] | [[file:docs/source/content/overview/overfitting.rst][Tutorial]] |
+| Regularization             | [[file:code/overview/regularization][Python]] | [[file:docs/source/content/overview/regularization.rst][Tutorial]] |
+| Cross-Validation           | [[file:code/overview/cross-validation][Python]] | [[file:docs/source/content/overview/crossvalidation.rst][Tutorial]] |
+
+*** TODO Supervised learning
+    :PROPERTIES:
+    :CUSTOM_ID: supervised-learning
+    :END:
+
+[[file:_img/supervised.gif]]
+
+| Title                   | Code   | Document      |
+|-------------------------+--------+---------------|
+| Decision Trees          | [[file:code/supervised/DecisionTree/decisiontrees.py][Python]] | [[file:docs/source/content/supervised/decisiontrees.rst][Tutorial]]      |
+| K-Nearest Neighbors     | [[file:code/supervised/KNN/knn.py][Python]] | [[file:docs/source/content/supervised/knn.rst][Tutorial]]      |
+| Naive Bayes             | [[file:code/supervised/Naive_Bayes][Python]] | #+BEGIN_QUOTE |
+|                         |        | [[file:docs/source/content/supervised/bayes.rst][Tutorial]]      |
+|                         |        | #+END_QUOTE   |
+| Logistic Regression     | [[file:supervised/Logistic_Regression/logistic_ex1.py][Python]] | #+BEGIN_QUOTE |
+|                         |        | [[file:docs/source/content/supervised/logistic_regression.rst][Tutorial]]      |
+|                         |        | #+END_QUOTE   |
+| Support Vector Machines | [[file:code/supervised/Linear_SVM/linear_svm.py][Python]] | [[file:docs/source/content/supervised/linear_SVM.rst][Tutorial]]      |
+
+*** TODO Unsupervised learning
+    :PROPERTIES:
+    :CUSTOM_ID: unsupervised-learning
+    :END:
+
+[[file:_img/unsupervised.gif]]
+
+| Title                         | Code   | Document |
+|-------------------------------+--------+----------|
+| Clustering                    | [[file:code/unsupervised/Clustering][Python]] | [[file:docs/source/content/unsupervised/clustering.rst][Tutorial]] |
+| Principal Components Analysis | [[file:code/unsupervised/PCA][Python]] | [[file:docs/source/content/unsupervised/pca.rst][Tutorial]] |
+
+*** TODO Deep Learning
+    :PROPERTIES:
+    :CUSTOM_ID: deep-learning
+    :END:
+
+[[file:_img/deeplearning.png]]
+
+| Title                         | Code          | Document      |
+|-------------------------------+---------------+---------------|
+| Neural Networks Overview      | #+BEGIN_QUOTE | #+BEGIN_QUOTE |
+|                               | [[file:code/deep_learning/mlp][Python]]        | [[file:docs/source/content/deep_learning/mlp.rst][Tutorial]]      |
+|                               | #+END_QUOTE   | #+END_QUOTE   |
+| Convolutional Neural Networks | #+BEGIN_QUOTE | [[file:docs/source/content/deep_learning/cnn.rst][Tutorial]]      |
+|                               | [[file:code/deep_learning/cnn][Python]]        |               |
+|                               | #+END_QUOTE   |               |
+| Autoencoders                  | #+BEGIN_QUOTE | [[file:docs/source/content/deep_learning/autoencoder.rst][Tutorial]]      |
+|                               | [[file:code/deep_learning/autoencoder][Python]]        |               |
+|                               | #+END_QUOTE   |               |
+| Recurrent Neural Networks     | #+BEGIN_QUOTE | #+BEGIN_QUOTE |
+|                               | [[file:code/deep_learning/rnn/rnn.py][Python]]        | [[file:code/deep_learning/rnn/rnn.ipynb][IPython]]       |
+|                               | #+END_QUOTE   | #+END_QUOTE   |
+
+
+** Pull Request Process
+   :PROPERTIES:
+   :CUSTOM_ID: pull-request-process
+   :END:
+
+Please consider the following criterions in order to help us in a better
+way:
+
+1. The pull request is mainly expected to be a link suggestion.
+2. Please make sure your suggested resources are not obsolete or broken.
+3. Ensure any install or build dependencies are removed before the end
+   of the layer when doing a build and creating a pull request.
+4. Add comments with details of changes to the interface, this includes
+   new environment variables, exposed ports, useful file locations and
+   container parameters.
+5. You may merge the Pull Request in once you have the sign-off of at
+   least one other developer, or if you do not have permission to do
+   that, you may request the owner to merge it for you if you believe
+   all checks are passed.
+
+
+** Final Note
+   :PROPERTIES:
+   :CUSTOM_ID: final-note
+   :END:
+
+We are looking forward to your kind feedback. Please help us to improve
+this open source project and make our work better. For contribution,
+please create a pull request and we will investigate it promptly. Once
+again, we appreciate your kind feedback and support.
+
+** Developers
+   :PROPERTIES:
+   :CUSTOM_ID: developers
+   :END:
+
+*Creator*: Machine Learning Mindset
+[[[https://machinelearningmindset.com/blog/][Blog]],
+[[https://github.com/machinelearningmindset][GitHub]],
+[[https://twitter.com/machinemindset][Twitter]]]
+
+*Supervisor*: Amirsina Torfi [[[https://github.com/astorfi][GitHub]],
+[[https://astorfi.github.io/][Personal Website]],
+[[https://www.linkedin.com/in/amirsinatorfi/][Linkedin]] ]
+
+*Developers*: Brendan Sherman*, James E Hopkins*
+[[[https://www.linkedin.com/in/jhopk][Linkedin]]], Zac Smith
+[[[https://www.linkedin.com/in/zac-smith-a7bb60185/i][Linkedin]]]
+
+*: equally contributed
